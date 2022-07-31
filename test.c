@@ -170,18 +170,6 @@ int min_pages(Book (*books)[10]) {
     return min;
 }
 
-void Example()
-{
-  static int x = area(4); 
-  printf("%d\n", x++);
-}
-
-
-struct f {
-    static int r;
-};
-
-
 /**
  * @brief it is just such a dead function
  *
@@ -191,7 +179,6 @@ int main() {
     Book books[10];
     int min = min_pages(&books);
     int x = 0;
-    Example();
     printf("x is: %d\n", x);
     // int num[10][15];
     // int(*nump)[15] = num;
