@@ -25,6 +25,7 @@ int menu() {
 }
 
 void calc_all(Employee* employee) {
+    employee->over_work = 0;
     float gross_pay = employee->hourly_rate * employee->hours_worked;
     if (employee->hours_worked > 40) {
         employee->over_work = employee->hourly_rate * 1.5 * (employee->hours_worked - 40);
